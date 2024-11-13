@@ -1,0 +1,20 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            'com.codeborne:selenide:7.3.1',
+            'org.seleniumhq.selenium:selenium-java:4.10.0',
+            "org.junit.jupiter:junit-jupiter:5.9.3",
+            'io.github.bonigarcia:webdrivermanager:5.7.0'
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
