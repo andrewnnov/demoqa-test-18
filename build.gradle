@@ -21,4 +21,5 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    systemProperty("chromeoptions.prefs", "intl.accept_languages=DE");
 }
